@@ -1,0 +1,19 @@
+#!/bin/bash
+# change these variables
+NUMBER=16
+APPLES=16
+KING="LUIS"
+# modify above variables
+# to make all decisions below TRUE
+if [ $NUMBER -gt 15 ] ; then
+  echo "That True"
+fi
+if [ $NUMBER -eq $APPLES ] ; then
+  echo "That True"
+fi
+if [[ ($APPLES -eq 12) || ("$KING" = "LUIS") ]] ; then
+  echo "That True"
+fi
+if [[ $(($NUMBER + $APPLES)) -le 32 ]] ; then
+  echo "That True"
+fi
